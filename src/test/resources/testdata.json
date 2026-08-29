@@ -1,0 +1,17 @@
+{
+  "login": {
+    "validUsername": "Admin",
+    "validPassword": "admin123",
+    "invalidUsername": "InvalidUser",
+    "invalidPassword": "InvalidPassword123"
+  },
+  "employees": {
+    "knownEmployee": "Amelia Brown",
+    "nonExistingEmployee": "ZZZ_NonExisting_Employee_999",
+    "lastNameOnly": "AutomationLastName"
+  },
+  "newEmployee": {
+    "firstNamePrefix": "Automation",
+    "lastNamePrefix": "Tester"
+  }
+}
