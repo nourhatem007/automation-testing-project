@@ -41,7 +41,7 @@ public class PIMTests extends BaseTest {
                 "Employee search results should contain the known employee");
     }
 
-    @Test(retryAnalyzer = RetryAnalyzer.class)
+    @Test
     @Severity(SeverityLevel.NORMAL)
     @Description("Search for an employee that does not exist")
     public void searchNonExistingEmployeeTest() {

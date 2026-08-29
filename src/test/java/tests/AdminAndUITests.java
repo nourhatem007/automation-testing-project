@@ -72,7 +72,7 @@ public class AdminAndUITests extends BaseTest {
                 "Footer link should open a URL containing orangehrm.com");
     }
 
-    @Test(retryAnalyzer = RetryAnalyzer.class)
+    @Test
     @Severity(SeverityLevel.NORMAL)
     @Description("Verify all required sidebar menu items are displayed")
     public void verifySidebarMenuTest() {

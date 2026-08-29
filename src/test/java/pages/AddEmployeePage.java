@@ -6,24 +6,12 @@ import org.openqa.selenium.WebDriver;
 import utils.WaitUtils;
 
 public class AddEmployeePage extends BasePage {
-
-    private final By firstName =
-            By.cssSelector("input[name='firstName']");
-
-    private final By lastName =
-            By.cssSelector("input[name='lastName']");
-
-    private final By saveButton =
-            By.xpath("//button[normalize-space()='Save']");
-
-    private final By requiredFirstName =
-            By.xpath("//label[normalize-space()='First Name']/ancestor::div[contains(@class,'oxd-input-group')]//*[normalize-space()='Required']");
-
-    private final By personalDetailsHeader =
-            By.xpath("//h6[normalize-space()='Personal Details']");
-
-    private final By formLoader =
-            By.cssSelector("div.oxd-form-loader");
+    private final By firstName = By.cssSelector("input[name='firstName']");
+    private final By lastName = By.cssSelector("input[name='lastName']");
+    private final By saveButton = By.xpath("//button[normalize-space()='Save']");
+    private final By requiredFirstName = By.cssSelector("span.oxd-input-field-error-message");
+    private final By personalDetailsHeader = By.xpath("//h6[normalize-space()='Personal Details']");
+    private final By formLoader = By.cssSelector("div.oxd-form-loader");
 
     public AddEmployeePage(WebDriver driver) {
         super(driver);
